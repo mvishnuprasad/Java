@@ -2,30 +2,35 @@ import java.util.*;
 public class q1 {
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
-        System.out.println("Enter Account num");
+        //System.out.println("Enter Account num");
         //long number=scn.nextInt();
-        Accounts obj=new Accounts();
-        System.out.println(obj.getAccNum());
-        System.out.println(obj.getDetails(111));
+ Accounts obj=new Accounts();
+
+
     }
 }
+
 class Accounts{
     String Name;
     int balance;
     int MinBalance;
     long AccNum;
 
-    public Accounts() {
-        this("AA0",111,111,111);
-        System.out.println("mt called");
-    }
 
+    public Accounts() {
+        this("Name is bob", 20000);
+        System.out.println("C1 called");
+    }
+    public Accounts(String name, int balance) {
+        this("Name is bob", 20000,1000,1234);
+        System.out.println("C2 called");
+    }
     public Accounts(String Name, int balance, int minBalance, long accNum) {
         this.Name = Name;
         this.balance = balance;
         this.MinBalance = minBalance;
         this.AccNum = accNum;
-        System.out.println("parametrised called");
+        System.out.println("c3 called");
     }
 
     public String getDetails(long number){
@@ -34,7 +39,7 @@ class Accounts{
             return Name;
         }
          if(number==111)
-            return "User Not Found ";
+            return getName();
          else return ")";
     }
 
