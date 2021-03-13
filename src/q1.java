@@ -5,7 +5,6 @@ public class q1 {
         System.out.println("Enter Account num");
         //long number=scn.nextInt();
         Accounts obj=new Accounts();
-
         System.out.println(obj.getAccNum());
         System.out.println(obj.getDetails(111));
     }
