@@ -6,7 +6,6 @@ public class q1 {
         //long number=scn.nextInt();
  Accounts obj=new Accounts();
 
-
     }
 }
 
@@ -15,8 +14,6 @@ class Accounts{
     int balance;
     int MinBalance;
     long AccNum;
-
-
     public Accounts() {
         this("Name is bob", 20000);
         System.out.println("C1 called");
