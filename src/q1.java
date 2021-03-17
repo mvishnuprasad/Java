@@ -4,8 +4,8 @@ public class q1 {
         Scanner scn=new Scanner(System.in);
         //System.out.println("Enter Account num");
         //long number=scn.nextInt();
- Accounts obj=new Accounts();
-
+        Accounts obj=new Accounts();
+        System.out.println(obj.getName());
     }
 }
 
@@ -16,18 +16,18 @@ class Accounts{
     long AccNum;
     public Accounts() {
         this("Name is bob", 20000);
-        System.out.println("C1 called");
+        System.out.println("C1 called by main method constructor call");
     }
     public Accounts(String name, int balance) {
         this("Name is bob", 20000,1000,1234);
-        System.out.println("C2 called");
+        System.out.println("C2 called c1");
     }
     public Accounts(String Name, int balance, int minBalance, long accNum) {
         this.Name = Name;
         this.balance = balance;
         this.MinBalance = minBalance;
         this.AccNum = accNum;
-        System.out.println("c3 called");
+        System.out.println("c3 called by c2");
     }
 
     public String getDetails(long number){
@@ -35,9 +35,9 @@ class Accounts{
         if(number==1234){
             return Name;
         }
-         if(number==111)
+        if(number==111)
             return getName();
-         else return ")";
+        else return ")";
     }
 
     public String getName() {
