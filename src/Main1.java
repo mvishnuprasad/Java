@@ -6,7 +6,7 @@ public class Main1 {
         Monitor m=new Monitor("27LBB","LG",27, /*r*/ new Resolution(1280,768));
         Motherboard Mb=new Motherboard("XEA22","Asus",6,4,"V20.33");
         PC thePc=new PC(theCase,m,Mb);
-      //  thePc.getMonitor().drawPixelAt(1111,1111,"red");
+        //  thePc.getMonitor().drawPixelAt(1111,1111,"red");
         //thePc.getMotherboard().loadProgramme("Zscaler");
         //thePc.getTheCase().powerButtonPresssed();
         thePc.powerUp();
@@ -158,9 +158,9 @@ class PC{
         getTheCase().powerButtonPresssed();
         drawLogo();
     }
-private void drawLogo(){
+    private void drawLogo(){
         getMonitor().drawPixelAt(1222,222,"blue");
-}
+    }
     private Case getTheCase() {
         return theCase;
     }
